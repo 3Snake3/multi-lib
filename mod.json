@@ -1,0 +1,6 @@
+name: "multi-lib"
+description: "The updated version of multi-lib.js for v7.0 crafters. I didn't create this library, the original author: younggam/multi-lib, I just updated the code, because at the moment author cannot update this mod. Support over Mindustry 7.0 version."
+displayName: "Multi Lib"
+author: "younggam, Snake"
+minGameVersion: "127"
+version: "1.0.8"

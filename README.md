@@ -1,21 +1,27 @@
 # multi-lib
-The updated version of multi-lib.js for v7.0 crafters. I didn't create this library, the original author: younggam/multi-lib, I just updated the code, because at the moment author cannot update this mod.
+Mindustry library mode that contains multicrafter scripts
+Support over Mindustry 6.0 version.
 
 What you can do with this library
+1. Set multiple recipes in your crafter
+2. Every input, output, craftTime can be differed
+3. Selection table for which recipe to be enabled
+4. Crafter can act as power generator according to recipe settings
+5. Extensible block and entity function
 
-Set multiple recipes in your crafter
-Every input, output, craftTime can be differed
-Selection table for which recipe to be enabled
-Crafter can act as power generator according to recipe settings
-Extensible block and entity function
-notice
-The author serve militery because of korean duty. Therefore I updated the code with the author's permission. As crafter-related things aren't change much in mindustry, this mod won't be outdated fastly.
+# notice
+I serve militery because of korean duty. This mod won't be updated well.
+As crafter-related things aren't change much in mindustry, this mod won't be oudated fastly
 
 How to use
-you must add dependencies:["multi-lib"] in mod.json in your mode
+----------
+you must add line below in mod.(h)json of your mod:
+```json
+dependencies:["multi-lib"]
+``` 
 
 example code
-
+```js
 const multiLib=require("multi-lib/library");
 //you can use GenericSmelter instead GenericCrafter
 //also GenericSmelter.SmelterBuild instead GenericCrafter.GenericCrafterBuild
@@ -114,3 +120,4 @@ multi.updateEffect=Fx.none;
 false: dump items and liquids of output unconditionally*/
 multi.dumpToggle=false;
 multi.requirements(Category.crafting,ItemStack.with(Items.copper,75));
+```
